@@ -1,0 +1,30 @@
+.faq-header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  // padding: 0 218px;
+  margin-bottom: 40px;
+  & &__title {
+    font-size: var(--font-size-extra-large);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-normal);
+    letter-spacing: 0.001em;
+    max-width: 336px;
+    margin: 0;
+  }
+  // Tablet Size
+  @media (max-width: 834px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    & &__title {
+      max-width: 257px;
+      font-size: var(--font-size-large);
+      margin: 0;
+      letter-spacing: 0em;
+    }
+  }
+  // Mobile Size
+  @media (max-width: 375px) {
+  }
+}

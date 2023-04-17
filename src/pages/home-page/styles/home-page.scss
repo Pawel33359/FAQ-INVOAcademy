@@ -1,0 +1,28 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+
+@import "./faq-header.scss";
+@import "./faq-section.scss";
+@import "./faq-card.scss";
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 63px 16px;
+  @media (max-width: 834px) {
+    padding-left: 15px;
+    padding-right: 12px;
+  }
+  @media (max-width: 375px) {
+    padding-left: 16px;
+    padding-right: 12px;
+  }
+}
+#home-page {
+  max-width: 772px;
+  margin: auto;
+  // Tablet Size
+  @media (max-width: 834px) {
+    max-width: 807px;
+  }
+}

@@ -13,23 +13,33 @@ const setAnswerHeight = function (card, active) {
   }
 };
 
-const clearActive = function () {
+const clearAllActive = function () {
   // Clear faq-card--active class for each faq card
   allFaqCards.forEach((card) => {
-    card.classList.remove("faq-card--active");
-
-    setAnswerHeight(card, false);
-
-    card.querySelector(".faq-card__drop-sign").src = "/images/plus.png";
+    clearSingleActive(card);
   });
+};
+
+const clearSingleActive = function (card) {
+  card.classList.remove("faq-card--active");
+
+  setAnswerHeight(card, false);
+
+  card.querySelector(".faq-card__drop-sign").src = "/images/plus.png";
 };
 
 document.querySelector(".faq-section").addEventListener("click", (e) => {
   const faqCard = e.target.closest(".faq-card");
   if (!faqCard) return;
 
-  // Set classes for faq cards
-  clearActive();
+  // If active question then hide
+  if (faqCard.classList.contains("faq-card--active")) {
+    clearSingleActive(faqCard);
+    return;
+  }
+
+  // Else clear active class from all questions and set a new question as active
+  clearAllActive();
   faqCard.classList.add("faq-card--active");
 
   // Set correct height for clicked on card

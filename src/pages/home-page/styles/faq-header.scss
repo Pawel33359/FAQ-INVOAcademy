@@ -11,6 +11,7 @@
     letter-spacing: 0.001em;
     max-width: 336px;
     margin: 0;
+    word-spacing: 0.8px;
   }
   // Tablet Size
   @media (max-width: 834px) {
@@ -22,6 +23,8 @@
       font-size: var(--font-size-large);
       margin: 0;
       letter-spacing: 0em;
+      word-spacing: 0px;
+      margin-left: -1.5px;
     }
   }
   // Mobile Size

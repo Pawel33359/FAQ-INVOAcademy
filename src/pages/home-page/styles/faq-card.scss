@@ -9,7 +9,7 @@
   &--active {
     border: var(--border-stroke) solid var(--color-primary);
     background-color: rgba(255, 115, 71, 0.08);
-    cursor: default;
+    // cursor: default;
   }
   &:hover {
     border: var(--border-stroke) solid var(--color-primary);
@@ -19,13 +19,16 @@
   & &__question {
     font-size: 18px;
     font-weight: var(--font-weight-semibold);
-    letter-spacing: -0.007em;
     line-height: 120%;
 
     display: flex;
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
+
+    // letter-spacing: -0.006em;
+    letter-spacing: -0.004em;
+    word-spacing: -0.2px;
   }
   & &__drop-sign {
     margin-right: -15px;
@@ -33,43 +36,61 @@
   }
   & &__answer {
     transition: all 0.5s ease;
-    letter-spacing: -0.006em;
     margin-top: 0;
     height: 0;
     overflow: hidden;
     line-height: 162.8%;
+    // letter-spacing: -0.008em;
+    // word-spacing: 0.3px;
+    letter-spacing: -0.01em;
+    word-spacing: 0.47px;
   }
   & &__link {
     color: var(--color-text);
     font-weight: var(--font-weight-semibold);
+    // margin-left: -0.5px;
+    // margin-right: -1.1px;
+    letter-spacing: -0.02em;
   }
 
   // Tablet Size
   @media (max-width: 834px) {
-    padding: 30px 32px 30px 32px;
+    padding: 30px 32px 30px 30px;
     max-width: 807px;
     & &__question {
       font-size: var(--font-size-medium);
+      letter-spacing: -0.006em;
+      word-spacing: 0.15px;
+      // line-height: 19.2px;
+      line-height: 18.8px;
     }
     & &__drop-sign {
-      margin-right: -2px;
-      margin-top: -2px;
+      margin-right: -1.4px;
+      margin-top: -2.1px;
     }
     & &__answer {
       font-size: var(--font-size-small);
       line-height: 22.4px;
+
+      letter-spacing: 0em;
+      word-spacing: -0.43px;
     }
     & &__link {
-      color: var(--color-text);
-      font-weight: var(--font-weight-semibold);
+      letter-spacing: -0.02em;
     }
   }
   // Mobile Size
   @media (max-width: 375px) {
-    padding: 24px 32px 22px 32px;
+    // padding: 24px 32px 22px 32px;
+    padding: 24px 32px 24px 31px;
+    & &__question {
+      line-height: 18.4px;
+    }
     & &__answer {
-      letter-spacing: -0.01em;
+      // letter-spacing: -0.01em;
       line-height: 156%;
+      letter-spacing: -0.002em;
+      word-spacing: -0.33px;
     }
   }
 }

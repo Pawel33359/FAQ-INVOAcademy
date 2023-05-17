@@ -26,9 +26,8 @@
     justify-content: space-between;
     align-items: center;
 
-    // letter-spacing: -0.006em;
     letter-spacing: -0.004em;
-    word-spacing: -0.2px;
+    word-spacing: 0.41px;
   }
   & &__drop-sign {
     margin-right: -15px;
@@ -40,29 +39,21 @@
     height: 0;
     overflow: hidden;
     line-height: 162.8%;
-    // letter-spacing: -0.008em;
-    // word-spacing: 0.3px;
-    letter-spacing: -0.01em;
-    word-spacing: 0.47px;
+    letter-spacing: -0.006em;
+    word-spacing: -0.3px;
   }
   & &__link {
     color: var(--color-text);
     font-weight: var(--font-weight-semibold);
-    // margin-left: -0.5px;
-    // margin-right: -1.1px;
-    letter-spacing: -0.02em;
   }
 
   // Tablet Size
   @media (max-width: 834px) {
-    padding: 30px 32px 30px 30px;
+    padding: 30px 32px 29.5px 30px;
     max-width: 807px;
     & &__question {
       font-size: var(--font-size-medium);
-      letter-spacing: -0.006em;
-      word-spacing: 0.15px;
-      // line-height: 19.2px;
-      line-height: 18.8px;
+      word-spacing: 0.45px;
     }
     & &__drop-sign {
       margin-right: -1.4px;
@@ -70,27 +61,22 @@
     }
     & &__answer {
       font-size: var(--font-size-small);
-      line-height: 22.4px;
+      line-height: 22.1px;
 
-      letter-spacing: 0em;
-      word-spacing: -0.43px;
-    }
-    & &__link {
-      letter-spacing: -0.02em;
+      letter-spacing: -0.007em;
+      word-spacing: -0.19px;
     }
   }
   // Mobile Size
   @media (max-width: 375px) {
-    // padding: 24px 32px 22px 32px;
-    padding: 24px 32px 24px 31px;
+    padding: 24px 32px 23.2px 31px;
     & &__question {
-      line-height: 18.4px;
+      line-height: 18.1px;
     }
     & &__answer {
-      // letter-spacing: -0.01em;
-      line-height: 156%;
+      line-height: 157%;
       letter-spacing: -0.002em;
-      word-spacing: -0.33px;
+      word-spacing: -0.53px;
     }
   }
 }

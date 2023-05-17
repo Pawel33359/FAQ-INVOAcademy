@@ -2,7 +2,6 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  // padding: 0 218px;
   margin-bottom: 40px;
   & &__title {
     font-size: var(--font-size-extra-large);
@@ -11,13 +10,12 @@
     letter-spacing: 0.001em;
     max-width: 336px;
     margin: 0;
-    word-spacing: 0.8px;
   }
   // Tablet Size
   @media (max-width: 834px) {
     display: flex;
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 32.5px;
     & &__title {
       max-width: 257px;
       font-size: var(--font-size-large);
